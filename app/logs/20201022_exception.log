@@ -1,0 +1,1 @@
+*ERROR* 	v1.7.2.4	2020/10/22 - 15:54:10: [ThemeRepository] Theme configuration file not found for theme at `/var/www/roadmakshop/themes/leo_liquid/config/theme.yml`. at line 130 in file src/Core/Addon/Theme/ThemeRepository.php
