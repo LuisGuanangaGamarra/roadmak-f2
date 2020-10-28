@@ -105,6 +105,16 @@ class CustomerFormatterCore implements FormFormatterInterface
         }
         $format[$genderField->getName()] = $genderField;
 
+        $format['identification'] = (new FormField)
+        ->setName('identification')
+        ->setLabel(
+            $this->translator->trans(
+                'N° Identificación', [], 'Shop.Forms.Labels'
+            )
+        )
+        ->setRequired(true)
+    ;
+
         $format['firstname'] = (new FormField)
             ->setName('firstname')
             ->setLabel(
@@ -140,6 +150,9 @@ class CustomerFormatterCore implements FormFormatterInterface
                     'Identification number', [], 'Shop.Forms.Labels'
                 ));
         }
+
+       
+
 
         $format['email'] = (new FormField)
             ->setName('email')

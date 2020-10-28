@@ -57,6 +57,10 @@ class CustomerCore extends ObjectModel
     /** @var int Current language used by the customer */
     public $id_lang;
 
+    
+    /** @var string Identification */
+    public $identification;
+
     /** @var string Lastname */
     public $lastname;
 
@@ -179,6 +183,7 @@ class CustomerCore extends ObjectModel
             'firstname' => array('type' => self::TYPE_STRING, 'validate' => 'isName', 'required' => true, 'size' => 255),
             'email' => array('type' => self::TYPE_STRING, 'validate' => 'isEmail', 'required' => true, 'size' => 128),
             'passwd' => array('type' => self::TYPE_STRING, 'validate' => 'isPasswd', 'required' => true, 'size' => 60),
+            'identification' => array('type' => self::TYPE_STRING,'required' => true,'size' => 10),
             'last_passwd_gen' => array('type' => self::TYPE_STRING, 'copy_post' => false),
             'id_gender' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedId'),
             'birthday' => array('type' => self::TYPE_DATE, 'validate' => 'isBirthDate'),
