@@ -102,6 +102,9 @@ class CustomerCore extends ObjectModel
 
     /** @var int Show public prices (B2B opt) */
     public $show_public_prices = 0;
+    
+     /** @var int Term Conditions (B2B opt) */
+     public $term_conditions = 0;
 
     /** @var int Risk ID (B2B opt) */
     public $id_risk;
@@ -197,6 +200,7 @@ class CustomerCore extends ObjectModel
             'ape' => array('type' => self::TYPE_STRING, 'validate' => 'isApe'),
             'outstanding_allow_amount' => array('type' => self::TYPE_FLOAT, 'validate' => 'isFloat', 'copy_post' => false),
             'show_public_prices' => array('type' => self::TYPE_BOOL, 'validate' => 'isBool', 'copy_post' => false),
+            'term_conditions' => array('type' => self::TYPE_BOOL, 'validate' => 'isBool','required' => true, 'copy_post' => false),
             'id_risk' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt', 'copy_post' => false),
             'max_payment_days' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt', 'copy_post' => false),
             'active' => array('type' => self::TYPE_BOOL, 'validate' => 'isBool', 'copy_post' => false),
