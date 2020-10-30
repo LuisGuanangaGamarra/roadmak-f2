@@ -1,7 +1,7 @@
 {assign var=_counter value=0}
 {function name="menu" nodes=[] depth=0 parent=null}
     {if $nodes|count}
-      <ul class="top-menu" {if $depth == 0}id="top-menu"{/if} data-depth="{$depth}">
+      <ul class="top-menu top-menu-zeynep" {if $depth == 0}id="top-menu"{/if} data-depth="{$depth}">
         {foreach from=$nodes item=node}
             <li class="{$node.type}{if $node.current} current {/if}" id="{$node.page_identifier}">
             {assign var=_counter value=$_counter+1}
@@ -33,7 +33,14 @@
     {/if}
 {/function}
 
-<div class="menu col-lg-8 col-md-7 js-top-menu position-static hidden-sm-down" id="_desktop_top_menu">
+<div class="col-lg-8 col-md-7">
+  <span style="font-size:30px;cursor:pointer;float:left;line-height: 45px;" class="hidden-sm-down btn-open-zeynep">&#9776;</span>
+  <a class="hidden-sm-down ml-2" id="_desktop_logo" href="{$urls.base_url}" style="float: left;width: 158px">
+    <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+  </a>
+</div>
+<!--div class="menu zeynep col-lg-8 col-md-7 js-top-menu position-static hidden-sm-down" id="_desktop_top_menu"-->
+<div class="menu zeynep js-top-menu hidden-sm-down" id="_desktop_top_menu">
     {menu nodes=$menu.children}
     <div class="clearfix"></div>
 </div>

@@ -58,12 +58,13 @@
   <div class="header-top">
     <div class="container">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+        <!--div class="col-md-2 hidden-sm-down" id="_desktop_logo">
           <a href="{$urls.base_url}">
             <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
           </a>
-        </div>
-        <div class="col-md-10 col-sm-12 position-static">
+        </div-->
+        <!--div class="col-md-10 col-sm-12 position-static"-->
+        <div class="col-md-12 col-sm-12 position-static">
           <div class="row">
             {hook h='displayTop'}
             <div class="clearfix"></div>
