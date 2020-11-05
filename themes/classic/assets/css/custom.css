@@ -120,7 +120,7 @@
 .zeynep ul {
     list-style-type: none;
     padding: 0;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
     -webkit-overflow-scrolling: touch;
 }
 
@@ -133,9 +133,13 @@
     display: block;
     font-size: 14px;
     font-weight: bold;
-    padding: 18px 20px;
+    /*padding: 18px 20px;*/
     text-decoration: none;
     transition: all 150ms;
+    padding-right: 20px;
+    padding-left: 36px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 .zeynep ul>li>a:hover {
