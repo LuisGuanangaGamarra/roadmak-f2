@@ -41,8 +41,8 @@
 </div>
 <!--div class="menu zeynep col-lg-8 col-md-7 js-top-menu position-static hidden-sm-down" id="_desktop_top_menu"-->
 <div class="menu zeynep js-top-menu hidden-sm-down" id="_desktop_top_menu">
-    <ul style="margin-top: 1rem;">
-      <li>MENU</li>
+    <ul style="margin-top: 0;background-color: #54595f;margin-bottom: 0;padding-top: 1rem;padding-bottom: 1rem;color: #fff;font-weight: bold;">
+      <li style="padding-left: 36px;">MENU</li>
     </ul>
     {menu nodes=$menu.children}
     <div class="clearfix"></div>
