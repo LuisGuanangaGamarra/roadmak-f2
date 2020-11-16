@@ -476,6 +476,9 @@ class AdminCustomersControllerCore extends AdminController
         }
         
 
+
+        $terms[] = array( 'id' => 1, 'name' => 'Acepto');
+
         $this->fields_form['input'] = array_merge(
             $this->fields_form['input'],
             array(
@@ -509,9 +512,9 @@ class AdminCustomersControllerCore extends AdminController
                         'name' => 'term_conditions',
                         'required' => true,
                         'values' => array(
-                            'id' => 'opt_term',
-                            'val' => 1,
-                            'name' => 'Acepto'
+                            'query' => $terms, 
+                            'id' => 'id',
+                            'name' => 'name'
                         )
                     )
             )
