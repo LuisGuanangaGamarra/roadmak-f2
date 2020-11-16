@@ -367,20 +367,21 @@ class AdminCustomersControllerCore extends AdminController
                 ),
                 array(
                     'type' => 'text',
-                    'label' => $this->trans('First name', array(), 'Admin.Global'),
-                    'name' => 'firstname',
-                    'required' => true,
-                    'col' => '4',
-                    'hint' => $this->trans('Invalid characters:', array(), 'Admin.Notifications.Info').' 0-9!&lt;&gt;,;?=+()@#"°{}_$%:'
-                ),
-                array(
-                    'type' => 'text',
                     'label' => $this->trans('N° Identificación', array(), 'Admin.Global'),
                     'name' => 'identification',
                     'required' => true,
                     'col' => '4', 
                     'hint' => $this->trans('Valid characters:', array(), 'Admin.Notifications.Info').' 0-9'
                 ),
+                array(
+                    'type' => 'text',
+                    'label' => $this->trans('First name', array(), 'Admin.Global'),
+                    'name' => 'firstname',
+                    'required' => true,
+                    'col' => '4',
+                    'hint' => $this->trans('Invalid characters:', array(), 'Admin.Notifications.Info').' 0-9!&lt;&gt;,;?=+()@#"°{}_$%:'
+                ),
+                
                 array(
                     'type' => 'text',
                     'label' => $this->trans('Last name', array(), 'Admin.Global'),
@@ -473,6 +474,7 @@ class AdminCustomersControllerCore extends AdminController
                 }
             }
         }
+        
 
         $this->fields_form['input'] = array_merge(
             $this->fields_form['input'],
@@ -500,7 +502,14 @@ class AdminCustomersControllerCore extends AdminController
                         $this->trans('This group will be the user\'s default group.', array(), 'Admin.Orderscustomers.Help'),
                         $this->trans('Only the discount for the selected group will be applied to this customer.', array(), 'Admin.Orderscustomers.Help')
                     )
-                )
+                    ),
+                    array(
+                        'type' => 'checkbox',
+                        'label' => $this->trans('Acepta Términos y Condiciones', array(), 'Admin.Global'),
+                        'name' => 'term_conditions',
+                        'required' => true,
+                        'class' => 't'
+                    )
             )
         );
 
