@@ -375,6 +375,14 @@ class AdminCustomersControllerCore extends AdminController
                 ),
                 array(
                     'type' => 'text',
+                    'label' => $this->trans('N° Identificación', array(), 'Admin.Global'),
+                    'name' => 'identification',
+                    'required' => true,
+                    'col' => '4', 
+                    'hint' => $this->trans('Valid characters:', array(), 'Admin.Notifications.Info').' 0-9'
+                ),
+                array(
+                    'type' => 'text',
                     'label' => $this->trans('Last name', array(), 'Admin.Global'),
                     'name' => 'lastname',
                     'required' => true,
