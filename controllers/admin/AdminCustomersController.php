@@ -514,7 +514,8 @@ class AdminCustomersControllerCore extends AdminController
                         'values' => array(
                             'query' => $terms, 
                             'id' => 'id',
-                            'name' => 'name'
+                            'name' => 'name',
+                            'val' =>'val'
                         )
                     )
             )
