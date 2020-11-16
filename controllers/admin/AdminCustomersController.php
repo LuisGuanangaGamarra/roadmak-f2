@@ -504,14 +504,14 @@ class AdminCustomersControllerCore extends AdminController
                     )
                     ),
                     array(
-                        'type' => 'group',
-                        'label' => $this->trans('Términos y Condiciones', array(), 'Admin.Global'),
+                        'type'  => 'checkbox',
+                        'label' => $this->trans('Acepta términos y condiciones', array(), 'Admin.Global'),
                         'name' => 'term_conditions',
                         'required' => true,
                         'values' => array(
                             'id' => 'opt_term',
-                            'value' => 1,
-                            'label' => $this->trans('Acepto', array(), 'Admin.Global')
+                            'val' => 1,
+                            'name' => 'Acepto'
                         )
                     )
             )
