@@ -477,7 +477,7 @@ class AdminCustomersControllerCore extends AdminController
         
 
 
-        $terms[] = array( 'id' => 1, 'name' => 'term_conditions');
+        $terms[] = array( 'id' => 1, 'name' => 'Acepto', 'val' => 1);
 
         $this->fields_form['input'] = array_merge(
             $this->fields_form['input'],
