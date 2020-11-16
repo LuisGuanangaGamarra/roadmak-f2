@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<!-- Block search module TOP -->
+<!-- Block search module TOP >
 <div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="{$search_controller_url}">
 	<form method="get" action="{$search_controller_url}">
 		<input type="hidden" name="controller" value="search">
@@ -33,4 +33,4 @@
 		</button>
 	</form>
 </div>
-<!-- /Block search module TOP -->
+</Block search module TOP -->
