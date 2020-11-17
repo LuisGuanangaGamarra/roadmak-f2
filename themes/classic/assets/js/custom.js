@@ -215,4 +215,12 @@ $(function () {
     $('.btn-open-zeynep').on('click', function () {
         zeynep.open()
     })
+
+    if ( $("title").html() == "Términos y condiciones"){
+        $("#content").css("background-color", "transparent");
+    }
+    if ( $("title").html() == "roadmakshop"){
+        $(".js-modal-content").css("max-height", "575px");
+        $(".js-modal-content").css("overflow-y", "scroll");
+    }
 })
