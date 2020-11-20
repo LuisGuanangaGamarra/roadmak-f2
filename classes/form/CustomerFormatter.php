@@ -121,7 +121,7 @@ class CustomerFormatterCore implements FormFormatterInterface
 
         $format['identification'] = (new FormField)
         ->setName('identification')
-        ->setType('text')
+        ->setType('number')
         ->setLabel(
             $this->translator->trans(
                 'N° Identificación', [], 'Shop.Forms.Labels'
